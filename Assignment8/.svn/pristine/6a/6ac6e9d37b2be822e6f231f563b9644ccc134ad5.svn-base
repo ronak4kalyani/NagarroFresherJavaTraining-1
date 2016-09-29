@@ -1,0 +1,48 @@
+12:10:59  INFO [main] - Mainlogger.enterInput - DEP LOC: 
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.1.0.Final}
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+12:11:00  WARN [pool-1-thread-1] - org.hibernate.orm.connections.configure - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/assign3db]
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001001: Connection properties: {user=root, password=****}
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001003: Autocommit mode: false
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.<init> - HHH000115: Hibernate connection pool size: 1 (min=1)
+12:11:00  INFO [pool-1-thread-1] - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12:11:01  INFO [pool-1-thread-1] - org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1194665d'
+12:11:04  INFO [main] - org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+12:11:04  INFO [main] - Mainlogger.validateSource - DEL
+12:11:04  INFO [main] - Mainlogger.enterInput - ARR LOC: 
+12:11:17  INFO [main] - Mainlogger.validateDestination - MUB
+12:11:17  INFO [main] - Mainlogger.enterInput - Flight Class: 
+12:11:19  INFO [main] - Mainlogger.enterInput - Date Of Travel(DD-MM-YYYY): 
+12:11:24  INFO [main] - Mainlogger.enterInput - Output preference(Sort by Fare/Duration)):
+(Enter 1/2): 
+12:11:31  INFO [main] - Mainlogger.main - 
+Result:
+12:11:31  INFO [main] - Mainlogger.main - flightNo=6E378, depLoc=DEL, arrLoc=MUB, validTill=29-12-2013, flightTime=1630, flightDuration=3.45, fare=6500, seatAvailability=true, flightClass=E
+12:11:31  INFO [main] - Mainlogger.main - flightNo=9W389, depLoc=DEL, arrLoc=MUB, validTill=17-12-2013, flightTime=0830, flightDuration=4.00, fare=5650, seatAvailability=true, flightClass=E
+12:11:31  INFO [main] - Mainlogger.main - flightNo=AI278, depLoc=DEL, arrLoc=MUB, validTill=17-12-2013, flightTime=1830, flightDuration=4.20, fare=5300, seatAvailability=true, flightClass=E
+12:11:31  INFO [main] - Mainlogger.main - flightNo=AI279, depLoc=DEL, arrLoc=MUB, validTill=10-12-2013, flightTime=0630, flightDuration=4.30, fare=4900, seatAvailability=true, flightClass=E
+12:11:31  INFO [main] - Mainlogger.main - 
+Want to Exit (Enter Y/N)
+12:11:38  INFO [main] - Mainlogger.enterInput - DEP LOC: 
+12:11:40  INFO [main] - Mainlogger.validateSource - DEL
+12:11:40  INFO [main] - Mainlogger.enterInput - ARR LOC: 
+12:11:43  INFO [main] - Mainlogger.validateDestination - MUB
+12:11:43  INFO [main] - Mainlogger.validateDestination - BGR
+12:11:43  INFO [main] - Mainlogger.enterInput - Flight Class: 
+12:11:45  WARN [main] - Mainlogger.validateFlightClass - Flight Class entered Inappropriately, Enter Again :
+12:11:48  INFO [main] - Mainlogger.enterInput - Date Of Travel(DD-MM-YYYY): 
+12:11:52  INFO [main] - Mainlogger.enterInput - Output preference(Sort by Fare/Duration)):
+(Enter 1/2): 
+12:11:54  INFO [main] - Mainlogger.main - 
+Result:
+12:11:54  INFO [main] - Mainlogger.main - flightNo=AI270, depLoc=DEL, arrLoc=BGR, validTill=12-12-2013, flightTime=1430, flightDuration=4.45, fare=11900, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - flightNo=6E375, depLoc=DEL, arrLoc=BGR, validTill=27-12-2013, flightTime=1330, flightDuration=4.45, fare=11620, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - flightNo=9W370, depLoc=DEL, arrLoc=BGR, validTill=19-12-2013, flightTime=1430, flightDuration=4.45, fare=11900, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - flightNo=6E370, depLoc=DEL, arrLoc=BGR, validTill=19-12-2013, flightTime=0730, flightDuration=4.48, fare=10500, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - flightNo=AI285, depLoc=DEL, arrLoc=BGR, validTill=17-12-2013, flightTime=1330, flightDuration=4.50, fare=11340, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - flightNo=9W385, depLoc=DEL, arrLoc=BGR, validTill=27-12-2013, flightTime=1330, flightDuration=4.50, fare=11340, seatAvailability=true, flightClass=EB
+12:11:54  INFO [main] - Mainlogger.main - 
+Want to Exit (Enter Y/N)

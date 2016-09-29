@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="This is ant project" default="run">
+
+	<property file="build.properties"/>
+
+	<target name="clean" description="Clean output directories">
+        <delete includeEmptyDirs="true">
+            <fileset dir="${build.dir}" includes="**/*"/>
+        </delete>
+	</target>
+
+	<path id="master-classpath">
+		<fileset dir="lib">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${build.dir}"/>
+	</path>
+
+	<target name="build" description="To compile java files">
+		<mkdir dir="${build.dir}/class"/>
+        <mkdir dir="lib"/>
+		<javac destdir="${build.dir}/class" source="1.7" target="1.7" debug="true"
+			 deprecation="false" optimize="false" failonerror="true" includeantruntime="false">
+			<src path="${src.dir}"/>
+			<classpath refid="master-classpath"/>
+		</javac>
+        <copy todir="${build.dir}/class">
+            <fileset dir="${src.dir}">
+                <include name="**/*.properties"/>
+                <include name="**/*.csv"/>
+            </fileset>
+        </copy>
+	</target>
+
+	<target name="build-javadoc" description="To generate javadoc">
+		<javadoc sourcepath="${src.dir}" destdir="doc" version="true" windowtitle="Airlines Application" >
+			<doctitle><![CDATA[= Airlines Application =]]></doctitle>
+			<bottom>
+				<![CDATA[Copyright © 2016. All Rights Reserved.]]>
+			</bottom>
+		</javadoc>
+	</target>
+
+
+	<target name="build-jar" depends="build" description="To create jar file">
+        <mkdir dir="${build.dir}/lib"/>
+		<jar destfile="${build.dir}/../MyJar.jar" basedir="${build.dir}/class">
+			<manifest>
+				<attribute name="Main-Class" value="com.nagarro.javatraining.assignment2.controller.Utility"/>
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="run" depends="build-jar" description="run project">
+		<java jar="${build.dir}/lib/MyJar.jar" fork="true"/>
+	</target>
+
+</project>

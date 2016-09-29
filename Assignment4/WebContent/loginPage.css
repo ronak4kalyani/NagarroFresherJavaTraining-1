@@ -1,0 +1,43 @@
+fieldset{
+	border-radius:4px ;
+	margin:0px ;
+}
+span{
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
+p{
+	margin:0px ;
+	margin-right:20px ;
+	padding-top:10px;
+	font-size: small;
+	display:none ;
+	float:right ;
+	color:red ;
+}
+div{
+	width: 350px;
+    margin:auto;
+    position:fixed ;
+	top: calc(33%);
+	left:calc(50% - 175px) ;
+	display:none ;
+}
+li{
+	list-style-type:none ;
+	float:left ;
+	margin:5px ;
+}
+
+form input{
+	float:right ;
+	margin-right:20px ;
+	border:0.5px solid black ;
+}
+legend {
+     margin: auto;
+}
+#kindOfUser{
+	display:block ;
+}

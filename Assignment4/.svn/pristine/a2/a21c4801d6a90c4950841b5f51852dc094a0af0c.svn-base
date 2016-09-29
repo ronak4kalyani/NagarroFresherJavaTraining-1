@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link href="loginPage.css" type= "text/css" rel ="stylesheet">
+</head>
+<body>
+<div id ='kindOfUser'>
+<fieldset>
+<legend align="center">Kind Of User</legend>
+Are you an :
+<ul>
+<li><label><input type = "radio" name ="userType" value = "existing">Existing User </label></li>
+<li><label><input type = "radio" name ="userType" value = "new">New User </label></li>
+</ul>
+</fieldset>
+</div>
+
+<div id="login">
+<fieldset>
+<legend align="center">Enter Login Details</legend>
+<form id="loginForm">
+<label>UserName : <input name="loginuserName" id ="loginUserName" required></label>
+<br><br>
+<label>Password : <input name="loginpass" type="password" id ="loginPass"required></label>
+<br><br>
+<span id ="fpassSpan">forgot Password  </span>
+<input type="submit" value= "Login" id ="loginSubmitBtn">
+</form>
+<p id ="loginValidationMsg"> </p>
+</fieldset>
+</div>
+
+<div id= "register">
+<fieldset>
+<legend align="center">Register</legend>
+<form method="post" action="RegisterUser" id ="registrationForm">
+<label>Full Name  <input name="name" id ="registerFullName" required></label>
+<br><br>
+<label>UserName <input name="userName" id ="registerUserName" required></label>
+<br><br>
+<label>Email  <input name="email" type="email" id ="registerEmail" required></label>
+<br><br>
+<label>Password  <input name="pass" type="password" id ="registerPass" required></label>
+<br><br>
+<label>Retype Password <input name="rePass" type="password" id ="registerRePass"required></label>
+<br><br>
+<input type="submit" value= "Register"><br>
+</form>
+<p id ="RegistrationValidationMsg"> </p>
+</fieldset>
+</div>
+
+<div id ="forgotPasswordDiv">
+<fieldset>
+<legend align="center">Forgot Password</legend>
+<form action="" id="fpForm" >
+<label>UserName <input name="UserName" id ="forgotPasswordUserName" required></label>
+<br><br>
+<label>Email  <input type="email" id ="forgotPasswordEmail" required></label>
+<br><br>
+<input type="submit" value= "Show Password" id="sPassBtn"><br>
+<p id="fpValidationMsg"> </p>
+</form>
+</fieldset>
+</div>
+
+<script src="jquery-3.1.0.js"></script>
+<script src="loginPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+NotEmpty.loginDetails.userId = userId should not be empty.
+NotEmpty.loginDetails.pass = password should not be empty.
+typeMismatch.flightdetails.flightDate=should be appropriate.

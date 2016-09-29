@@ -1,0 +1,12 @@
+03:45:45  INFO [main] - Mainlogger.enterInput - DEP LOC: 
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.1.0.Final}
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03:45:45  WARN [pool-1-thread-1] - org.hibernate.orm.connections.configure - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/assign3db]
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001001: Connection properties: {user=root, password=****}
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.orm.connections.buildCreator - HHH10001003: Autocommit mode: false
+03:45:45  INFO [pool-1-thread-1] - org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.<init> - HHH000115: Hibernate connection pool size: 1 (min=1)
+03:45:46  INFO [pool-1-thread-1] - org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03:45:46  INFO [pool-1-thread-1] - org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@71e54f34'
